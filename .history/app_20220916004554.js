@@ -43,13 +43,8 @@ function determineWords(speech, words) {
   if (words.includes("Do you love me")) {
     speech.text = "why should i love you? you are a loser!";
   }
-  if (words.includes("Open YouTube for me")) {
-    speech.text = "Opening youtube for my master now!";
-    window.open("https://www.youtube.com/");
-  }
-  if (words.includes("Open Google for me")) {
-    speech.text = "Opening google for my master now!";
-    window.open("https://www.google.com/");
+  if (words.includes("How are you")) {
+    speech.text = "I am fine , thank you!";
   }
 }
 
