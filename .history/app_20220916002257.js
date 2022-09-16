@@ -29,11 +29,13 @@ function computerSpeech(words) {
 
   window.speechSynthesis.speak(speech, words);
   if (words.includes("how are you")) {
-    speech.text = "I am fine , thank you!";
+    speech.text = ""
   }
 }
 
-function determineWords(params) {}
+function determineWords(params) {
+  
+}
 
 button.addEventListener("click", () => {
   recognition.start();

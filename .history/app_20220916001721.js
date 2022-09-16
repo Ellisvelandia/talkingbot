@@ -15,25 +15,8 @@ recognition.onresult = function (event) {
   const spokenwords = event.results[0][0].transcript;
 
   console.log("spoken words are", spokenwords);
-  computerSpeech(spokenwords);
+  computerSpeech(spoken)
 };
-
-function computerSpeech(words) {
-  const speech = new SpeechSynthesisUtterance();
-  speech.lang = "en-us";
-  speech.pitch = 0.9;
-  speech.volume = 1;
-  speech.rate = 1;
-
-  determineWords(speech, words);
-
-  window.speechSynthesis.speak(speech, words);
-  if (words.includes("how are you")) {
-    speech.text = "I am fine , thank you!";
-  }
-}
-
-function determineWords(params) {}
 
 button.addEventListener("click", () => {
   recognition.start();

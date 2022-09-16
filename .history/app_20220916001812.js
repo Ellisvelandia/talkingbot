@@ -20,20 +20,8 @@ recognition.onresult = function (event) {
 
 function computerSpeech(words) {
   const speech = new SpeechSynthesisUtterance();
-  speech.lang = "en-us";
-  speech.pitch = 0.9;
-  speech.volume = 1;
-  speech.rate = 1;
-
-  determineWords(speech, words);
-
-  window.speechSynthesis.speak(speech, words);
-  if (words.includes("how are you")) {
-    speech.text = "I am fine , thank you!";
-  }
+  speech.lang =""
 }
-
-function determineWords(params) {}
 
 button.addEventListener("click", () => {
   recognition.start();
