@@ -5,12 +5,9 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  flex-direction: column;
+  flex-direction: column; 
 }
 
 button {
   padding: 10px;
-  width: 30%;
-  background: cyan;
-  font-size: 22px;
 }
