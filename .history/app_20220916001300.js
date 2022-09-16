@@ -1,4 +1,4 @@
-const button = document.querySelector("button");
+const button = document.querySelectorryselector("button");
 
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -11,10 +11,6 @@ recognition.onstart = function () {
 
 recognition.onresult = function (event) {
   console.log(event);
-
-  const spokenwords = event.results[0][0].transcript;
-
-  console.log("spoken words are", spokenwords);
 };
 
 button.addEventListener("click", () => {

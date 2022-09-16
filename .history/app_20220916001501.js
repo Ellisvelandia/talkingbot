@@ -12,9 +12,7 @@ recognition.onstart = function () {
 recognition.onresult = function (event) {
   console.log(event);
 
-  const spokenwords = event.results[0][0].transcript;
-
-  console.log("spoken words are", spokenwords);
+  const spokenwords = event.results
 };
 
 button.addEventListener("click", () => {

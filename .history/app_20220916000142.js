@@ -1,22 +1,20 @@
-const button = document.querySelector("button");
+const button = document.queryselector("button");
 
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
 
 const recognition = new SpeechRecognition();
 
-recognition.onstart = function () {
+recognition.onStart = function () {
   console.log("Speech Recognition started!");
 };
 
 recognition.onresult = function (event) {
   console.log(event);
-
-  const spokenwords = event.results[0][0].transcript;
-
-  console.log("spoken words are", spokenwords);
 };
 
 button.addEventListener("click", () => {
-  recognition.start();
+  recognition.onStart();
 });
+
+alert ("This is an alert dialog box");  
