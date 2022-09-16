@@ -29,8 +29,7 @@ function computerSpeech(words) {
 
   window.speechSynthesis.speak(speech);
 }
-
-function determineWords(speech, words) {
+function 
   if (words.includes("how are you")) {
     speech.text = "I am fine , thank you!";
   }
