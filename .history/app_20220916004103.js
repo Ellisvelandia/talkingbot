@@ -31,7 +31,7 @@ function computerSpeech(words) {
 }
 
 function determineWords(speech, words) {
-  if (words.includes("How are you")) {
+  if (words.includes("how are you")) {
     speech.text = "I am fine , thank you!";
   }
   if (words.includes("Who I am")) {

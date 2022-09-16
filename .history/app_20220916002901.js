@@ -31,17 +31,17 @@ function computerSpeech(words) {
 }
 
 function determineWords(speech, words) {
-  if (words.includes("How are you")) {
+  if (words.includes("how are you")) {
     speech.text = "I am fine , thank you!";
   }
-  if (words.includes("Who I am")) {
+  if (words.includes("who am i")) {
     speech.text = "You are my master!";
   }
-  if (words.includes("How is the weather")) {
-    speech.text = "why you care about that? you never go out!";
+  if (words.includes("how is the weather")) {
+    speech.text = "why you care about that) you never go out!";
   }
-  if (words.includes("Do you love me")) {
-    speech.text = "why should i love you? you are a loser!";
+  if (words.includes("do you love me")) {
+    speech.text = "why should i love you? !";
   }
 }
 
